@@ -10,14 +10,9 @@ const getRandomX = ({ width }) =>
 const getRandomY = ({ height }) =>
 	rndBetween(height / two, hundred - (height / two));
 
-const project = (position) => {
-	const { x, y } = position;
-
-	return {
-		...position,
-		x: x - (context.config.width / two),
-		y: y - (context.config.height / two),
-	};
-};
+const project = (position) => ({
+	x: position.x - (context.config.width / two),
+	y: position.y - (context.config.height / two),
+});
 
 export { getRandomX, getRandomY, project };

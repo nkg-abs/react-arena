@@ -6,13 +6,14 @@ import { project } from '../services/positionServices';
 const Target = () => {
 	const { x, y } = project(context.state.target);
 	const style = {
-		top: `${ x }%`,
-		left: `${ y }%`,
+		top: `${ y }%`,
+		left: `${ x }%`,
 	};
 
 	return (
 		<div
 			className="target"
+			role="target"
 			style={ style }
 			onClick={ () => context.actions.moveTarget() }
 		/>
