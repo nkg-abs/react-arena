@@ -1,6 +1,6 @@
 const config = {
-	countStart: 0,
-	increment: 1,
+	width: 10,
+	height: 10,
 };
 
 export default config;

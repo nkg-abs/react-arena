@@ -1,9 +1,11 @@
-const increaseCount = ({ state, data }) => ({
-	count: state.count + data,
+import TargetManager from '../services/targetManager';
+
+const moveTarget = (context) => ({
+	target: TargetManager.moveTarget(context),
 });
 
 const actions = {
-	increaseCount,
+	moveTarget,
 };
 
 export default actions;
