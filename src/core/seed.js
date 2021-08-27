@@ -1,7 +1,7 @@
 const seed = {
 	target: {
-		x: 0,
-		y: 0,
+		x: 50,
+		y: 50,
 	},
 };
 
